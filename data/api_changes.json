@@ -1,0 +1,623 @@
+[
+  {
+    "api_name": "np.geterrobj",
+    "change_type": "removed",
+    "description": "获取当前浮点错误处理对象的函数与 np.seterrobj 一同被移除",
+    "suggestion": "使用上下文管理器 with np.errstate(): 作为替代方案",
+    "since_version": "2.0",
+    "severity": "low",
+    "reference": "NumPy 2.0.0 发布说明 - Python API 移除"
+  },
+  {
+    "api_name": "np.seterrobj",
+    "change_type": "removed",
+    "description": "设置浮点错误处理对象的函数与 np.geterrobj 一同被移除",
+    "suggestion": "使用上下文管理器 with np.errstate(): 作为替代方案",
+    "since_version": "2.0",
+    "severity": "low",
+    "reference": "NumPy 2.0.0 发布说明 - Python API 移除"
+  },
+  {
+    "api_name": "np.cast",
+    "change_type": "removed",
+    "description": "用于数据类型转换的函数已被移除",
+    "suggestion": "对于 np.cast[dtype](arg),使用 np.asarray(arg, dtype=dtype)替代",
+    "since_version": "2.0",
+    "severity": "medium",
+    "reference": "NumPy 2.0.0 发布说明 - Python API 移除"
+  },
+  {
+    "api_name": "np.source",
+    "change_type": "removed",
+    "description": "显示函数源代码的工具已被移除",
+    "suggestion": "使用 Python 标准库的 inspect.getsource 函数",
+    "since_version": "2.0",
+    "severity": "low",
+    "reference": "NumPy 2.0.0 发布说明 - Python API 移除"
+  },
+  {
+    "api_name": "np.lookfor",
+    "change_type": "removed",
+    "description": "返回有关模块的信息的工具已被移除",
+    "suggestion": "使用IDE的功能",
+    "since_version": "2.0",
+    "severity": "low",
+    "reference": "NumPy 2.0.0 发布说明 - Python API 移除"
+  },
+  {
+    "api_name": "np.who",
+    "change_type": "removed",
+    "description": "打印已定义数组的工具已被移除",
+    "suggestion": "使用 IDE 中提供的变量浏览器",
+    "since_version": "2.0",
+    "severity": "low",
+    "reference": "NumPy 2.0.0 发布说明 - Python API 移除"
+  },
+  {
+    "api_name": "np.fastCopyAndTranspose",
+    "change_type": "removed",
+    "description": "用于快速复制并转置数组的内部函数,已从主命名空间移除",
+    "suggestion": "使用标准的数组操作,如 arr.T.copy()",
+    "since_version": "2.0",
+    "severity": "low",
+    "reference": "NumPy 2.0.0 发布说明 - Python API 移除"
+  },
+  {
+    "api_name": "np.kernel_version",
+    "change_type": "removed",
+    "description": "返回NumPy构建时使用的编译器/内核版本信息,已从主命名空间移除",
+    "suggestion": "不使用",
+    "since_version": "2.0",
+    "severity": "low",
+    "reference": "NumPy 2.0.0 发布说明 - Python API 移除"
+  },
+  {
+    "api_name": "np.numarray",
+    "change_type": "removed",
+    "description": "Numpy的前身,已从主命名空间移除",
+    "suggestion": "不使用",
+    "since_version": "2.0",
+    "severity": "low",
+    "reference": "NumPy 2.0.0 发布说明 - Python API 移除"
+  },
+  {
+    "api_name": "np.oldnumeric",
+    "change_type": "removed",
+    "description": "更早的数值计算包Numeric的兼容层,已从主命名空间移除",
+    "suggestion": "不使用",
+    "since_version": "2.0",
+    "severity": "low",
+    "reference": "NumPy 2.0.0 发布说明 - Python API 移除"
+  },
+  {
+    "api_name": "np.set_numeric_ops",
+    "change_type": "removed",
+    "description": "在旧版NumPy中用于设置全局操作行为,已从主命名空间移除",
+    "suggestion": "不使用",
+    "since_version": "2.0",
+    "severity": "low",
+    "reference": "NumPy 2.0.0 发布说明 - Python API 移除"
+  },
+  {
+    "api_name": "np.float_",
+    "change_type": "removed",
+    "description": "np.float64 的别名已被移除",
+    "suggestion": "使用 np.float64",
+    "since_version": "2.0",
+    "severity": "high",
+    "reference": "NumPy 2.0.0 发布说明 - 别名移除"
+  },
+  {
+    "api_name": "np.complex_",
+    "change_type": "removed",
+    "description": "np.complex128 的别名已被移除",
+    "suggestion": "使用 np.complex128",
+    "since_version": "2.0",
+    "severity": "high",
+    "reference": "NumPy 2.0.0 发布说明 - 别名移除"
+  },
+  {
+    "api_name": "np.longfloat",
+    "change_type": "removed",
+    "description": "np.longdouble 的别名已被移除",
+    "suggestion": "使用 np.longdouble",
+    "since_version": "2.0",
+    "severity": "medium",
+    "reference": "NumPy 2.0.0 发布说明 - 别名移除"
+  },
+  {
+    "api_name": "np.singlecomplex",
+    "change_type": "removed",
+    "description": "np.complex64 的别名已被移除",
+    "suggestion": "使用 np.complex64",
+    "since_version": "2.0",
+    "severity": "medium",
+    "reference": "NumPy 2.0.0 发布说明 - 别名移除"
+  },
+  {
+    "api_name": "np.cfloat",
+    "change_type": "removed",
+    "description": "np.complex128 的别名已被移除",
+    "suggestion": "使用 np.complex128",
+    "since_version": "2.0",
+    "severity": "medium",
+    "reference": "NumPy 2.0.0 发布说明 - 别名移除"
+  },
+  {
+    "api_name": "np.longcomplex",
+    "change_type": "removed",
+    "description": "np.clongdouble 的别名已被移除",
+    "suggestion": "使用 np.clongdouble",
+    "since_version": "2.0",
+    "severity": "medium",
+    "reference": "NumPy 2.0.0 发布说明 - 别名移除"
+  },
+  {
+    "api_name": "np.clongfloat",
+    "change_type": "removed",
+    "description": "np.clongdouble 的别名已被移除",
+    "suggestion": "使用 np.clongdouble",
+    "since_version": "2.0",
+    "severity": "medium",
+    "reference": "NumPy 2.0.0 发布说明 - 别名移除"
+  },
+  {
+    "api_name": "np.string_",
+    "change_type": "removed",
+    "description": "np.bytes_ 的别名已被移除",
+    "suggestion": "使用 np.bytes_(针对字节数据)或 np.str_(针对Unicode字符串)",
+    "since_version": "2.0",
+    "severity": "high",
+    "reference": "NumPy 2.0.0 发布说明 - 别名移除"
+  },
+  {
+    "api_name": "np.unicode_",
+    "change_type": "removed",
+    "description": "np.str_ 的别名已被移除",
+    "suggestion": "使用 np.str_",
+    "since_version": "2.0",
+    "severity": "high",
+    "reference": "NumPy 2.0.0 发布说明 - 别名移除"
+  },
+  {
+    "api_name": "np.Inf",
+    "change_type": "removed",
+    "description": "np.inf 的别名已被移除",
+    "suggestion": "使用 np.inf",
+    "since_version": "2.0",
+    "severity": "low",
+    "reference": "NumPy 2.0.0 发布说明 - 别名移除"
+  },
+  {
+    "api_name": "np.Infinity",
+    "change_type": "removed",
+    "description": "np.inf 的别名已被移除",
+    "suggestion": "使用 np.inf",
+    "since_version": "2.0",
+    "severity": "low",
+    "reference": "NumPy 2.0.0 发布说明 - 别名移除"
+  },
+  {
+    "api_name": "np.NaN",
+    "change_type": "removed",
+    "description": "np.nan 的别名已被移除",
+    "suggestion": "使用 np.nan",
+    "since_version": "2.0",
+    "severity": "low",
+    "reference": "NumPy 2.0.0 发布说明 - 别名移除"
+  },
+  {
+    "api_name": "np.infty",
+    "change_type": "removed",
+    "description": "np.inf 的别名已被移除",
+    "suggestion": "使用 np.inf",
+    "since_version": "2.0",
+    "severity": "low",
+    "reference": "NumPy 2.0.0 发布说明 - 别名移除"
+  },
+  {
+    "api_name": "np.mat",
+    "change_type": "removed",
+    "description": "将输入解释为矩阵的构造函数别名已被移除",
+    "suggestion": "使用 np.asmatrix 代替",
+    "since_version": "2.0",
+    "severity": "medium",
+    "reference": "NumPy 2.0.0 发布说明 - 别名移除"
+  },
+  {
+    "api_name": "np.issubclass_",
+    "change_type": "removed",
+    "description": "内置 issubclass 的冗余函数已被移除",
+    "suggestion": "使用Python内置的 issubclass",
+    "since_version": "2.0",
+    "severity": "low",
+    "reference": "NumPy 2.0.0 发布说明 - 函数移除"
+  },
+  {
+    "api_name": "np.asfarray",
+    "change_type": "removed",
+    "description": "将输入转换为浮点数组的函数已被移除",
+    "suggestion": "使用带有正确 dtype(如 np.float64)的 np.asarray 代替",
+    "since_version": "2.0",
+    "severity": "medium",
+    "reference": "NumPy 2.0.0 发布说明 - 函数移除"
+  },
+  {
+    "api_name": "np.set_string_function",
+    "change_type": "removed",
+    "description": "设置NumPy对象打印格式的函数已被移除",
+    "suggestion": "使用 np.set_printoptions 并指定自定义的 formatter 参数",
+    "since_version": "2.0",
+    "severity": "low",
+    "reference": "NumPy 2.0.0 发布说明 - 函数移除"
+  },
+  {
+    "api_name": "np.tracemalloc_domain",
+    "change_type": "relocated",
+    "description": "该常量已从主命名空间移除",
+    "suggestion": "从 np.lib 模块访问:np.lib.tracemalloc_domain",
+    "since_version": "2.0",
+    "severity": "low",
+    "reference": "NumPy 2.0.0 发布说明 - Python API 移除"
+  },
+  {
+    "api_name": "np.recfromcsv",
+    "change_type": "removed",
+    "description": "从CSV文件加载记录数组的函数已从主命名空间移除",
+    "suggestion": "使用带有逗号分隔符的 np.genfromtxt 代替",
+    "since_version": "2.0",
+    "severity": "medium",
+    "reference": "NumPy 2.0.0 发布说明 - Python API 移除"
+  },
+  {
+    "api_name": "np.recfromtxt",
+    "change_type": "removed",
+    "description": "从文本文件加载记录数组的函数已从主命名空间移除",
+    "suggestion": "使用 np.genfromtxt 代替",
+    "since_version": "2.0",
+    "severity": "medium",
+    "reference": "NumPy 2.0.0 发布说明 - Python API 移除"
+  },
+  {
+    "api_name": "np.issctype",
+    "change_type": "removed",
+    "description": "检查是否为标量数据类型的小众函数已从主命名空间彻底移除",
+    "suggestion": "可能需要重新实现相关逻辑,或检查是否必需",
+    "since_version": "2.0",
+    "severity": "low",
+    "reference": "NumPy 2.0.0 发布说明 - Python API 移除"
+  },
+  {
+    "api_name": "np.maximum_sctype",
+    "change_type": "removed",
+    "description": "返回更高级别数据类型的小众函数已从主命名空间彻底移除",
+    "suggestion": "可能需要重新实现相关逻辑,或使用 np.result_type",
+    "since_version": "2.0",
+    "severity": "low",
+    "reference": "NumPy 2.0.0 发布说明 - Python API 移除"
+  },
+  {
+    "api_name": "np.obj2sctype",
+    "change_type": "removed",
+    "description": "将Python对象转换为标量数据类型的小众函数已从主命名空间彻底移除",
+    "suggestion": "可能需要重新实现相关逻辑",
+    "since_version": "2.0",
+    "severity": "low",
+    "reference": "NumPy 2.0.0 发布说明 - Python API 移除"
+  },
+  {
+    "api_name": "np.sctype2char",
+    "change_type": "removed",
+    "description": "将数据类型转换为字符代码的小众函数已从主命名空间彻底移除",
+    "suggestion": "可能需要重新实现相关逻辑",
+    "since_version": "2.0",
+    "severity": "low",
+    "reference": "NumPy 2.0.0 发布说明 - Python API 移除"
+  },
+  {
+    "api_name": "np.sctypes",
+    "change_type": "removed",
+    "description": "包含所有标量数据类型的字典已从主命名空间彻底移除",
+    "suggestion": "可能需要使用 np.sctypes(如果仍可从内部访问),或重构代码",
+    "since_version": "2.0",
+    "severity": "low",
+    "reference": "NumPy 2.0.0 发布说明 - Python API 移除"
+  },
+  {
+    "api_name": "np.issubsctype",
+    "change_type": "removed",
+    "description": "检查一个数据类型是否为另一个的子类型的小众函数已从主命名空间移除",
+    "suggestion": "可能需要重新实现相关逻辑",
+    "since_version": "2.0",
+    "severity": "low",
+    "reference": "NumPy 2.0.0 发布说明 - Python API 移除"
+  },
+  {
+    "api_name": "np.deprecate",
+    "change_type": "removed",
+    "description": "用于创建弃用警告的装饰器/函数已从主命名空间移除",
+    "suggestion": "使用Python标准库的 warnings.warn 并指定 DeprecationWarning",
+    "since_version": "2.0",
+    "severity": "low",
+    "reference": "NumPy 2.0.0 发布说明 - Python API 移除"
+  },
+  {
+    "api_name": "np.deprecate_with_doc",
+    "change_type": "removed",
+    "description": "np.deprecate 的变体已从主命名空间移除",
+    "suggestion": "使用Python标准库的 warnings.warn 并指定 DeprecationWarning,手动管理文档",
+    "since_version": "2.0",
+    "severity": "low",
+    "reference": "NumPy 2.0.0 发布说明 - Python API 移除"
+  },
+  {
+    "api_name": "np.safe_eval",
+    "change_type": "removed",
+    "description": "安全评估字符串表达式的函数已从主命名空间移除",
+    "suggestion": "使用Python标准库的 ast.literal_eval",
+    "since_version": "2.0",
+    "severity": "low",
+    "reference": "NumPy 2.0.0 发布说明 - Python API 移除"
+  },
+  {
+    "api_name": "np.find_common_type",
+    "change_type": "removed",
+    "description": "查找一组标量或数据类型的公共数据类型的函数已被移除",
+    "suggestion": "使用 numpy.promote_types 或 numpy.result_type对于 scalar_types 参数的语义,将Python标量(如 0, 0.0, 0j)作为参数传递给 numpy.result_type",
+    "since_version": "2.0",
+    "severity": "medium",
+    "reference": "NumPy 2.0.0 发布说明 - Python API 移除"
+  },
+  {
+    "api_name": "np.round_",
+    "change_type": "removed",
+    "description": "np.round 的冗余别名已被移除",
+    "suggestion": "使用 np.round",
+    "since_version": "2.0",
+    "severity": "low",
+    "reference": "NumPy 2.0.0 发布说明 - Python API 移除"
+  },
+  {
+    "api_name": "np.nbytes",
+    "change_type": "removed",
+    "description": "返回数据类型所占字节数的函数已被移除",
+    "suggestion": "使用 np.dtype(<dtype>).itemsize 替代",
+    "since_version": "2.0",
+    "severity": "low",
+    "reference": "NumPy 2.0.0 发布说明 - Python API 移除"
+  },
+  {
+    "api_name": "np.compare_chararrays",
+    "change_type": "relocated",
+    "description": "比较字符数组的函数已从主命名空间移除",
+    "suggestion": "使用np.char.compare_chararrays代替",
+    "since_version": "2.0",
+    "severity": "low",
+    "reference": "NumPy 2.0.0 发布说明 - Python API 移除"
+  },
+  {
+    "api_name": "np.format_parser",
+    "change_type": "relocated",
+    "description": "解析格式字符串的工具已从主命名空间移除",
+    "suggestion": "使用np.rec.format_parser代替",
+    "since_version": "2.0",
+    "severity": "low",
+    "reference": "NumPy 2.0.0 发布说明 - Python API 移除"
+  },
+  {
+    "api_name": "np.array_api",
+    "change_type": "removed",
+    "description": "实验性的数组API标准子模块已被移除",
+    "suggestion": "对于日常使用,改用主 numpy 命名空间对于严格的合规性测试,或使用独立的 array-api-strict 包",
+    "since_version": "2.0",
+    "severity": "low",
+    "reference": "NumPy 2.0.0 发布说明 - Python API 移除"
+  },
+  {
+    "api_name": "np.core.umath_tests",
+    "change_type": "removed",
+    "description": "已弃用的子模块,已从公共API中完全移除",
+    "suggestion": "无替代,需要寻找实现相同功能的替代库或自行实现",
+    "since_version": "2.0",
+    "severity": "medium",
+    "reference": "NumPy 2.0.0 发布说明 - 已过期的弃用"
+  },
+  {
+    "api_name": "np.msort",
+    "change_type": "removed",
+    "description": "沿第一个轴排序的便捷函数已过期的弃用,最终被移除",
+    "suggestion": "使用 np.sort(a, axis=0) 替代",
+    "since_version": "2.0",
+    "severity": "medium",
+    "reference": "NumPy 2.0.0 发布说明 - 已过期的弃用"
+  },
+  {
+    "api_name": "np.compat",
+    "change_type": "deprecated",
+    "description": "用于Python 2/3兼容性的模块由于不再支持Python 2,已被弃用",
+    "suggestion": "移除所有对 np.compat 或其内容的导入和使用",
+    "since_version": "2.0",
+    "severity": "low",
+    "reference": "NumPy 2.0.0 发布说明 - 弃用"
+  },
+  {
+    "api_name": "np.trapz",
+    "change_type": "deprecated",
+    "description": "使用梯形法则进行数值积分的函数已被弃用",
+    "suggestion": "使用 np.trapezoid 或 scipy.integrate 中的函数",
+    "since_version": "2.0",
+    "severity": "medium",
+    "reference": "NumPy 2.0.0 发布说明 - 弃用"
+  },
+  {
+    "api_name": "np.in1d",
+    "change_type": "deprecated",
+    "description": "测试一个数组的每个元素是否存在于另一个数组中的函数已被弃用",
+    "suggestion": "使用 np.isin",
+    "since_version": "2.0",
+    "severity": "medium",
+    "reference": "NumPy 2.0.0 发布说明 - 弃用"
+  },
+  {
+    "api_name": "np.row_stack",
+    "change_type": "deprecated",
+    "description": "np.vstack 的别名已被弃用",
+    "suggestion": "使用 np.vstack",
+    "since_version": "2.0",
+    "severity": "low",
+    "reference": "NumPy 2.0.0 发布说明 - 弃用"
+  },
+  {
+    "api_name": "np.dtype(\"a\")",
+    "change_type": "deprecated",
+    "description": "使用字符代码创建 np.bytes_ 数据类型的别名方式已被弃用",
+    "suggestion": "使用 np.dtype(\"S\")代替",
+    "since_version": "2.0",
+    "severity": "low",
+    "reference": "NumPy 2.0.0 发布说明 - 弃用"
+  },
+  {
+    "api_name": "np.linalg.lstsq.rcond (default)",
+    "change_type": "behavior_change",
+    "description": "np.linalg.lstsq 的默认 rcond 参数值已从机器精度更改为机器精度乘以 max(M, N)",
+    "suggestion": "通过显式传递 rcond=-1 可以恢复旧行为建议检查代码结果是否受影响",
+    "since_version": "2.0",
+    "severity": "medium",
+    "reference": "NumPy 2.0.0 发布说明 - 弃用 (np.linalg.lstsq)"
+  },
+  {
+    "api_name": "np.ceil",
+    "change_type": "behavior_change",
+    "description": "对于整数输入,NumPy 1.x 返回浮点数NumPy 2.0+ 遵循数组API标准,保留输入整数类型",
+    "suggestion": "检查代码逻辑是否依赖旧的浮点返回类型如需浮点结果,可先显式转换为浮点类型",
+    "since_version": "2.0",
+    "severity": "medium",
+    "reference": "NumPy 2.0.0 发布说明 - 行为改进 (NEP 50)"
+  },
+  {
+    "api_name": "np.floor",
+    "change_type": "behavior_change",
+    "description": "对于整数输入,行为同 np.ceil,在 2.0+ 中保留整数类型",
+    "suggestion": "同 np.ceil,检查类型依赖",
+    "since_version": "2.0",
+    "severity": "medium",
+    "reference": "NumPy 2.0.0 发布说明 - 行为改进 (NEP 50)"
+  },
+  {
+    "api_name": "np.gradient",
+    "change_type": "behavior_change",
+    "description": "返回值从列表更改为元组,使返回值不可变",
+    "suggestion": "如果代码假设返回值为列表(如进行赋值),需要将其改为元组操作或转换为列表",
+    "since_version": "2.0",
+    "severity": "low",
+    "reference": "NumPy 2.0.0 发布说明 - 更改"
+  },
+  {
+    "api_name": "np.errstate",
+    "change_type": "behavior_change",
+    "description": "现在完全是上下文安全和线程安全的,且只能进入一次np.setbufsize 的效果与 np.errstate() 上下文关联",
+    "suggestion": "确保没有嵌套或在多线程中滥用 np.errstate注意离开上下文后 bufsize 会被重置",
+    "since_version": "2.0",
+    "severity": "low",
+    "reference": "NumPy 2.0.0 发布说明 - 改进 和 更改"
+  },
+  {
+    "api_name": "np.bool",
+    "change_type": "behavior_change",
+    "description": "在 1.24 之前是 Python bool 的别名,现已重新引入为 NumPy 布尔数据类型的规范名称,np.bool_ 成为其别名",
+    "suggestion": "明确意图:使用 np.bool_ 表示 NumPy 布尔类型,使用 Python 内置 bool 表示 Python 布尔类型注意语义变化",
+    "since_version": "2.0",
+    "severity": "high",
+    "reference": "NumPy 2.0.0 发布说明 - 更改"
+  },
+  {
+    "api_name": "np.sign (for complex)",
+    "change_type": "behavior_change",
+    "description": "复数符号的计算方式改变,现在遵循数组API标准:z / |z|(如果 z != 0),而不是基于实部和虚部的旧逻辑",
+    "suggestion": "检查依赖复数 np.sign 旧行为的代码,结果可能不同",
+    "since_version": "2.0",
+    "severity": "medium",
+    "reference": "NumPy 2.0.0 发布说明 - 更改"
+  },
+  {
+    "api_name": "np.any",
+    "change_type": "behavior_change",
+    "description": "对于对象数组,np.any 和 np.all 现在返回布尔值,而不是像 Python 的 or/and 那样求值为其中一个参数",
+    "suggestion": "如果需要旧行为,使用 np.logical_or.reduce 和 np.logical_and.reduce",
+    "since_version": "2.0",
+    "severity": "medium",
+    "reference": "NumPy 2.0.0 发布说明 - 更改"
+  },
+  {
+    "api_name": "np.all",
+    "change_type": "behavior_change",
+    "description": "对于对象数组,行为变更同 np.any",
+    "suggestion": "如果需要旧行为,使用 np.logical_and.reduce",
+    "since_version": "2.0",
+    "severity": "medium",
+    "reference": "NumPy 2.0.0 发布说明 - 更改"
+  },
+  {
+    "api_name": "np.unique (with return_inverse)",
+    "change_type": "behavior_change",
+    "description": "当 return_inverse=True 且输入为多维数组时,unique_inverse 输出的形状在 2.0.0 版本中发生变化(在 2.0.1 中为 axis=None 情况修正)旨在使重建更",
+    "suggestion": "使用 np.take(unique, unique_inverse, axis=axis) 进行重建如需兼容 2.0.0,可能需 reshape",
+    "since_version": "2.0",
+    "severity": "medium",
+    "reference": "NumPy 2.0.0 发布说明 - 注意"
+  },
+  {
+    "api_name": "np.can_cast",
+    "change_type": "behavior_change",
+    "description": "不能再将 Python int, float, complex 实例用于 np.can_cast结果不应依赖于传入的值",
+    "suggestion": "对于Python标量,需要添加条件判断:if type(obj) in (int, float, complex): …",
+    "since_version": "2.0",
+    "severity": "medium",
+    "reference": "NumPy 2.0.0 发布说明 - 注意"
+  },
+  {
+    "api_name": "np.loadtxt",
+    "change_type": "behavior_change",
+    "description": "默认编码从特定值更改为 encoding=None这主要影响 converters 参数,它们现在接收 str 而非 bytes",
+    "suggestion": "通过显式传递 encoding 参数来锁定行为(新行为用 None,旧行为用 ‘bytes‘ 等)",
+    "since_version": "2.0",
+    "severity": "medium",
+    "reference": "NumPy 2.0.0 发布说明 - 兼容性说明"
+  },
+  {
+    "api_name": "np.genfromtxt",
+    "change_type": "behavior_change",
+    "description": "默认编码从特定值更改为 encoding=Noneconverters 接收 str,且返回的文本数据现在是 unicode 字符串而非字节",
+    "suggestion": "通过显式传递 encoding 参数来锁定行为",
+    "since_version": "2.0",
+    "severity": "medium",
+    "reference": "NumPy 2.0.0 发布说明 - 兼容性说明"
+  },
+  {
+    "api_name": "np.solve",
+    "change_type": "behavior_change",
+    "description": "当 b 的维度比 a 少一个时,广播规则的歧义已解决,新的方式符合 Array API 标准,可能与旧行为不兼容",
+    "suggestion": "使用 np.solve(a, b[…, None])[…, 0] 可以重现旧行为",
+    "since_version": "2.0",
+    "severity": "medium",
+    "reference": "NumPy 2.0.0 发布说明 - 兼容性说明"
+  },
+  {
+    "api_name": "np.dtype (with trailing comma)",
+    "change_type": "behavior_change",
+    "description": "带逗号的字符串初始化 np.dtype 的规则被清理尾随逗号现在总是创建结构化 dtype",
+    "suggestion": "检查 np.dtype() 此类用法使用 np.dtype() 或 np.dtype() 代替弃用的 np.dtype() 形式",
+    "since_version": "2.0",
+    "severity": "low",
+    "reference": "NumPy 2.0.0 发布说明 - 更改"
+  },
+  {
+    "api_name": "np.array / np.asarray (copy parameter)",
+    "change_type": "behavior_change",
+    "description": "copy 参数现在接受 True/False/Nonecopy=False 的含义变为‘绝不复制’,如果需要复制会引发 ValueError",
+    "suggestion": "审查使用 copy=False 的代码,确保在不期望复制时使用,否则会触发错误",
+    "since_version": "2.0",
+    "severity": "medium",
+    "reference": "NumPy 2.0.0 发布说明 - 更改"
+  }
+]
