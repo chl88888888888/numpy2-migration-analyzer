@@ -1,0 +1,14 @@
+# Created by venv; see https://docs.python.org/3/library/venv.html
+# 虚拟环境
+numpy2-analyzer/
+
+# 编辑器文件
+.vscode/
+*.swp
+*.pyc
+__pycache__/
+numpy2-migration-analyzer.code-workspace
+
+# 系统文件
+.DS_Store
+Thumbs.db
