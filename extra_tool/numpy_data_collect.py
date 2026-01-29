@@ -5,7 +5,7 @@ import time
 from datetime import datetime
 
 #GITHUB_TOKEN = '' 这里要添加github爬取使用的token
-HEADERS = {'Authorization': f'token {GITHUB_TOKEN}'}
+HEADERS = {'Authorization': f'token {GITHUB_TOKEN}'} # type: ignore
 REPO_OWNER = 'numpy'
 REPO_NAME = 'numpy'
 
