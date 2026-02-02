@@ -1,4 +1,3 @@
-# numpy_data_crawler.py
 import requests
 import json
 import time
