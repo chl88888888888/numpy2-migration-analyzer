@@ -3,7 +3,6 @@
 用于验证分析器是否能正确检测问题
 """
 import numpy as np
-import os
 
 def legacy_function():
     """使用多个旧版NumPy API的函数"""
@@ -11,7 +10,7 @@ def legacy_function():
     err_obj = np.geterrobj()
     
     # 2. 使用已弃用的API
-    float_val = np.float(3.14)
+    float_val = np.float_(3.14)
     str_val = np.string_("test")
     
     # 3. 正常使用（不应被标记）
@@ -23,7 +22,7 @@ def legacy_function():
 # 类中的使用
 class LegacyProcessor:
     def __init__(self):
-        self.value = np.float(1.0)  # 类属性中的使用
+        self.value = np.float_(1.0)  # 类属性中的使用
     
     def process(self):
         """处理方法"""
@@ -34,8 +33,8 @@ class LegacyProcessor:
 if __name__ == "__main__":
     x = 10
     if x > 5:
-        temp = np.float(x)  # 条件块中的使用
+        temp = np.float_(x)  # 条件块中的使用
     else:
-        temp = np.float(0)
+        temp = np.float_(0)
     
     print(legacy_function())

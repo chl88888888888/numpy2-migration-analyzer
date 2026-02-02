@@ -14,11 +14,7 @@ def modern_function():
     bytes_data = np.bytes_("hello")
     str_data = np.str_("world")
     
-    # 使用错误处理的现代方式
-    with np.errstate(invalid='ignore'):
-        calc = np.sqrt([-1, 0, 1])
-    
-    return result, bytes_data, str_data, calc
+    return result, bytes_data, str_data
 
 if __name__ == "__main__":
     print("All modern APIs used correctly")
