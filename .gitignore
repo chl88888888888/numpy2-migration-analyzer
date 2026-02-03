@@ -15,3 +15,6 @@ Thumbs.db
 
 # 测试文件
 run_test.py
+
+#一些输出文件
+reports
